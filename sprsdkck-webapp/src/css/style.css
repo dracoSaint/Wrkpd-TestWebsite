@@ -1,7 +1,7 @@
 /* --- General & Variables --- */
 :root {
   --primary-color: #8c00fe;
-  --accent-color: #24c1ff;
+  --accent-color: #00fffb;
   --background-color: #000000;
   --white-bg: #ffffff;
   --text-color: #333333;
@@ -30,6 +30,7 @@ body {
   border-radius: 3px;
 }
 
+
 /* --- Header --- */
 .site-header {
   background-color: var(--background-color);
@@ -57,7 +58,7 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
   vertical-align: middle;
 }
@@ -87,7 +88,7 @@ body {
 
 /* --- Buttons --- */
 .button-primary {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -99,7 +100,7 @@ body {
 }
 
 .button-primary:hover {
-  background-color: #534bf2; /* A slightly darker accent */
+  background-color: #00fffb;
 }
 
 /* --- Hero Section --- */
