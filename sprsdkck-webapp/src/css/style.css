@@ -1,8 +1,10 @@
 /* --- General & Variables --- */
 :root {
   --primary-color: #8c00fe;
+  --secondary-color: #000000;
   --accent-color: #00fffb;
   --background-color: #000000;
+  --black-bg: #000000;
   --white-bg: #ffffff;
   --text-color: #333333;
   --header-font: 'Poppins', sans-serif;
@@ -53,59 +55,21 @@ body {
   background-color: #00fffb;
 }
 
-/* --- Hero Section --- */
-.hero {
-  padding: 80px 0;
-  text-align: center;
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.hero h1 {
-  font-family: var(--header-font);
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 15px;
+.button-secondary:hover {
+  background-color: #00fffb;
 }
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-}
-
-/* --- Features Section --- */
-.features {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.features h2 {
-  font-family: var(--header-font);
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 40px;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  text-align: left;
-}
-
-.feature-card {
-  background-color: var(--white-bg);
-  padding: 30px;
-  border-radius: 8px;
-  border: 1px solid #eaeaea;
-}
-
-.feature-card h3 {
-  font-family: var(--header-font);
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  margin-top: 0;
-}
-
 
 /* --- Header --- */
 .site-header {

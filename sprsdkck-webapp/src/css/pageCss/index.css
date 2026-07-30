@@ -37,3 +37,78 @@
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
+
+/* --- Button --- */
+
+/* --- Features Section --- */
+.features {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+.feature-card {
+  background-color: var(--white-bg);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card p {
+  color: var(--text-color);
+}
+
+.feature-card h3 {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.feature-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle closest-side, var(--accent-color), transparent);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.feature-card:hover{
+  transform: scale(1.05);
+  background-color: var(--black-bg);
+}
+
+.feature-card:hover p{
+  color: white;
+}
+
+.feature-card:hover::before {
+  opacity: 0.2;
+}
